@@ -1,6 +1,6 @@
 class newapi {
     constructor(){
-        this.apikey = 'fbb9824382c44dd6ae847853163783f2'
+        this.apikey = 'your api key'
     }
     async newsApi(wordInput,country,category,sortby,datefrom,dateto){
         let url = 'https://newsapi.org/v2/'
