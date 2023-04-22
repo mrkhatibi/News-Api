@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+.body{
+    background-color: #c0dac0;
+}
+.form-group{
+    
+    padding: 20px;
+    border: 5px dashed blue;
+}
+label {
+    font-family: 'Sigmar', cursive;
+    font-size: x-large;
+}
+
+.submitbtn{
+    margin-top: 40px;
+    margin: 40px 15px 0px;
+}
+.result{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 5px double blue;
+}
+#spinner{
+    display:none ;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+.showmessages{
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+.footer{
+    background-color: rgb(70, 248, 109);
+   
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}

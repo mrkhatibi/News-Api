@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>News Search</title>
+</head>
+<body class="body ">
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <a class="navbar-brand">
+            <img src="https://img.icons8.com/avantgarde/100/null/search.png"/>          Search Box
+        </a>
+      </nav>
+    <div class="container">
+        <div class="showmessages"></div>
+        <form class="formclear form-group col-md-8 offset-md-2">
+            <div class="worddiv">
+
+                <label for="word">Enter words</label>
+                <input type="text" class="form-control" id="wordInput"  placeholder="word">
+              
+            </div>
+            <div class="countrydiv">
+
+                <label for="country">Country</label>
+                <select class="form-control" id="country">
+                  <option value="">انتخاب کشور</option>
+                  <option value="ae">امارات</option>
+                  <option value="fr">فرانسه</option>
+                  <option value="us">آمریکا</option>
+                  <option value="ch">چین</option>
+                  <option value="br">برزیل</option>
+                  <option value="it">ایتالیا</option>
+                </select>
+            </div>
+            <div class="categorydiv">
+                <label for="category">category</label>
+                <select class="form-control" id="category">
+                  <option value="">انتخاب دسته</option>
+                  <option value="business">بیزینس</option>
+                  <option value="entertainment">سرگرمی</option>
+                  <option value="general">رسمی</option>
+                  <option value="health">سلامتی</option>
+                  <option value="science">علمی</option>
+                  <option value="sports">ورزشی</option>
+                  <option value="technology">تکنولوژی</option>
+
+                </select>
+            </div>
+            <div class="sortby">
+                <label for="sortby">sortby</label>
+                <select class="form-control" id="sortby">
+                  <option value="">انتخاب مرتب سازی </option>
+                  <option value="relevancy">مرتبط بودن</option>
+                  <option value="popularity">محبوبیت</option>
+
+                </select>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="datefrom">from : </label>
+                  <input id = "datefrom" type="text" class="form-control" placeholder="from 1 month ago to now">
+                </div>
+                <div class="col">
+                    <label for="dateto">To : </label>
+                  <input  id = "dateto" type="text" class="form-control" placeholder="To today (Example:2023-03-20) ">
+                </div>
+              </div>
+              <div class="row">
+
+                  <button type="submit" id  = "submitbtn" class=" btn-block submitbtn btn btn-success ">Submit</button>
+                  <button type="submit" id  = "resetbtn" class="btn-block submitbtn btn btn-success ">reset</button>
+              </div>
+
+            </form>
+        <div class="result">
+            <img src="./1479.gif" id="spinner">
+
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <h4>Mrkhatibi &#169; All Rights Reserved</h4>
+    </footer>
+    <script src="./ui.js"></script>
+    <script src="./news.js"></script>
+    <script src="./app.js"></script>
+
+</body>
+</html>
